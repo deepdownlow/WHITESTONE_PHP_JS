@@ -2,42 +2,51 @@ $(document).ready(() => {
  const responsive = (...args) => {
   if (iPhoneX.matches) {
    $(".featured-title").css({ "font-size": "50px", "line-height": "1.1" });
-   $(".home-banner-logo").css({ "width": "190px", "height": "auto", "margin-bottom": "44px", "margin-top": "100px" });
-   $("#head").css({ "font-size": "24px", "margin-top": "22px" });
+   $(".home-banner-logo").css({ "width": "190px", "height": "auto", "margin-bottom": "44px", "margin-top": "210px" });
+   $("header").css("margin-top", "80px");
    $("#work-with-us").css("border", "2px solid white");
    $('#bg-vid').css("display", "none")
-   $(".blue-slant").css({ "clip-path": "none", "left": "0" })
+   $(".blue-slant").css({ "clip-path": "polygon(0% 0, 100% 0, 100% 100%, 0% 100%)", "left": "0" })
    $("section.home-banner").css({ "background-image": "url('https://images.unsplash.com/photo-1504297050568-910d24c426d3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80')", "background-size": "cover" });
    $("h2.text-yellow").css({ "width": "181px", "margin-top": "250px" })
    //NAVBAR
-   $('#nav_bar_top').css({ "position": "fixed", "top": "120px", "width": "375px" })
-   $('.text-right > li').css({ "color": "red", "display": "block", "margin-bottom": "20px" })
+   $('#nav_bar_top').css({ "position": "fixed", "top": "0px", "width": "375px", "margin-top": "0" })
+   $('.text-right > li').css({ "color": "red", "display": "block", "margin-bottom": "15px", "cursor": "pointer" })
    $('.text-right > li > a').css({ "display": "none", "letter-spaing": "2px", "color": "#494b50", "font-size": "32px" })
-   $('.text-right > li:nth-child(1) > a').css({ "position": "relative", "top": "50px", "right": "-246px" })
+   $('.text-right > li:nth-child(1) > a').css({ "position": "relative", "top": "50px", "right": "-280px" })
    $('.text-right > li:nth-child(2)').css("width", "350px")
-   $('.text-right > li:nth-child(2) > a').css({ "position": "relative", "top": "50px", "right": "-209px", })
-   $('.text-right > li:nth-child(3) > a').css({ "position": "relative", "top": "50px", "right": "-240px" })
-   $('.text-right > li:nth-child(4) > a').css({ "position": "relative", "top": "50px", "right": "-271px" })
-   $('.text-right > li:nth-child(5) > a').css({ "position": "relative", "top": "50px", "right": "-260px", "color": "#002f87" })
-   $('.text-right').css({ "position": "fixed", "top": "142px", "right": "200px" })
-   $('.mobile_menu').css({ "position": "fixed", "top": "120px", "left": "0", "background-color": "white", "width": "375px", "height": "740px", "display": "none" })
+   $('.text-right > li:nth-child(2) > a').css({ "position": "relative", "top": "50px", "right": "-243px", })
+   $('.text-right > li:nth-child(3) > a').css({ "position": "relative", "top": "50px", "right": "-274px" })
+   $('.text-right > li:nth-child(4) > a').css({ "position": "relative", "top": "50px", "right": "-305px" })
+   $('.text-right > li:nth-child(5) > a').css({ "position": "relative", "top": "50px", "right": "-291px", "color": "#002f87" })
+   $('#backdrop').css({ "position": "fixed", "top": "408px", "right": "-9px", "display": "none", "clip-path": "polygon(7% 0, 100% 0, 100% 100%, 0 100%)" })
+   $('.footer-social_two > a').css({ "color": "#002f87", "margin-right": "15px" })
+   $('.footer-social_two').css({ "position": "fixed", "top": "520px", "right": "0", "display": "none" })
+   $('.text-right').css({ "position": "fixed", "top": "30px", "right": "200px" })
+   $('.mobile_menu').css({ "position": "fixed", "top": "79px", "left": "0", "background-color": "white", "width": "375px", "height": "803px", "display": "none" })
    $('.home-community-logos > img').css({ "width": "88.7px", "width": "34.4px" })
 
    //HAMBURGER MENU
-   $('.hamburger-menu').css({ "position": "fixed", "top": "66px", "right": "50px", "color": "#002f87", "font-size": "42px" })
+   $('.hamburger-menu').css({ "position": "fixed", "top": "20px", "right": "17px", "color": "#002f87", "font-size": "42px" })
+   $('.gap').css({ "position": "fixed", "top": "28px", "right": "18px", "background-color": "#002f87", "height": "29px", "width": "37px", "display": "none" })
+
    $('.hamburger-menu').click(() => {
     //change button color
+    $('.gap').toggle()
     $('.mobile_menu').toggle()
     $('.text-right > li > a').toggle()
+    $('#backdrop').toggle()
+    $('.footer-social_two').toggle()
    })
 
    $('.home-about-top').css("height", "383px")
-   $('#invest-h').css({ "font-size": "30px", "line-height": "1.1", "margin-top": "22px" })
+   $('h2#invest-h.text-blue').css({ "font-size": "12px", "line-height": "1.5", "width": "281px", "color": "pink" })
    $('#invest-p').css({ "font-size": "12px", "line-height": "1.5", "width": "281px" })
    $('#invest-btn').css({ "margin-bottom": "50px", "font-size": "10px", "width": "144px", "height": "40px", "padding": "3.3%" })
    $('.home-about').css({ "background-size": "cover" })
    $('.about-blurb-container').css({ "width": "100%" })
    $('.text-yellow').css({ "font-size": "40px", "line-height": "1.1" })
+   $(".landing-page #head").css({ "font-size": "24px", "margin-top": "30px" });
    $('div.text-white > p').css({ "font-size": "12px", "line-height": "1.5", "width": "350px", "letter-spacing": "0.2px" })
    $('#text-box').css({ "position": "relative", "top": "-200px" })
    $('#community-btn').css({ "width": "220px", "height": "14px", "font-size": "10px", "position": "relative", "left": "50%", "transform": "translate(-50%,-50%)", "border": "2px solid #c2d500", "margin-top": "50px", "padding-bottom": "24.281px" })
@@ -89,7 +98,7 @@ $(document).ready(() => {
    $('section.careers-description::before').css({ "position": "relative", "top": "-389px", "clip-path": "polygon(0 36%, 100% 0, 100% 100%, 0% 100%)" })
 
    //WHO WE ARE => STORY
-   $('h2.text-blue').css({ "font-size": "40px", "line-height": "1.13", "letter-spacing": "2px", "color": "#002f87", "width": "280px", "position": "relative", "top": "-70px", "left": "-2px" })
+   $('h2.text-blue').css({ "font-size": "40px", "line-height": "1.13", "letter-spacing": "2px", "color": "#002f87", "width": "330px", "position": "relative", "top": "-70px", "left": "-2px" })
    $('#who_story_p').css({ "font-size": "12px", "line-height": "1.5", "letter-spacing": ".2px", "color": "#002f87", "width": "355px", "height": "51px", "position": "relative", "top": "-100px", "left": "-2px", "color": "#494b50" })
    $('#who_story_quote').css({ "font-size": "15px", "line-height": "1.6", "letter-spacing": "2px", "color": "#002f87", "width": "337px", "position": "relative", "top": "-100px", "left": "35px", "color": "#002f87" })
    $('#who_story_quote_name').css({ "font-size": "11px", "color": "#494b50", "height": "40px", "position": "relative", "top": "-95px", "right": "0", "margin-bottom": "70px" })
@@ -108,15 +117,26 @@ $(document).ready(() => {
    $('.play-icon > img').css({ "width": "82px", "height": "82px" })
    $('.intro-story').css({ "padding-bottom": "120px" })
    $('.hero-clip').css({ "clip-path": "polygon(0 0, 101% 0, 65% 100%, 0% 100%)" })
+
+   //CONTACT US
+   $('#page_content p').css({ "margin-top": "-41px", "font-size": "12px", "width": "341px", "line-height": "1.5" })
+   $('#page_content p').css({ "margin-top": "-41px", "font-size": "12px", "width": "341px", "line-height": "1.5" })
+
+
+
+
   } else if (iPad.matches) {
    $('.hamburger-menu').css({ "display": "none" })
    $('#slant-2').css({ "display": "none" })
+   $('.footer-social_two').css({ "display": "none" })
   } else if (iPadPro.matches) {
    $('.hamburger-menu').css({ "display": "none" })
    $('#slant-2').css({ "display": "none" })
+   $('.footer-social_two').css({ "display": "none" })
   } else {
    $('.hamburger-menu').css({ "display": "none" })
    $('#slant-2').css({ "display": "none" })
+   $('.footer-social_two').css({ "display": "none" })
   }
  };
 
