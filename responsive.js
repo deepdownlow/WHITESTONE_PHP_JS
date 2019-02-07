@@ -147,7 +147,7 @@ $(document).ready(() => {
    $('#who_quote').addClass("dist_quote_mobile")
    $('.video-player-overlay').css({ "height": "280px" })
    $('#who_story_h2').css({ "font-size": "40px", "line-height": "1.13", "letter-spacing": "2px", "color": "#002f87", "width": "330px", "position": "relative", "top": "-70px", "left": "-2px" })
-   $('#who_story_p, #who_team_p, .acq > p, .who-culture-content > p').css({ "font-size": "12px", "line-height": "1.5", "letter-spacing": ".2px", "color": "#002f87", "width": "355px", "height": "51px", "position": "relative", "top": "-100px", "left": "-2px", "color": "#494b50" })
+   $('#who_story_p, #who_team_p, .acq > p, .who-culture-content > p, #who_culture_join > p').css({ "font-size": "12px", "line-height": "1.5", "letter-spacing": ".2px", "color": "#002f87", "width": "355px", "height": "51px", "position": "relative", "top": "-100px", "left": "-2px", "color": "#494b50" })
    $('.who-culture-content > p').css("top", "20px")
    $('#who_story_quote').css({ "font-size": "15px", "line-height": "1.6", "letter-spacing": "2px", "color": "#002f87", "width": "337px", "position": "relative", "top": "-100px", "left": "35px", "color": "#002f87" })
    $('#who_story_quote_name').css({ "font-size": "11px", "color": "#494b50", "height": "40px", "position": "relative", "top": "-95px", "right": "0", "margin-bottom": "70px" })
@@ -170,8 +170,20 @@ $(document).ready(() => {
 
    //WHO WE ARE => CULTURE
    $('#who_culture_section').addClass("culture-description-mobile")
-   $('#who_culture_bg').css({ "width": "800px", "background-position": "171px 5px" })
-   $('#who_culture_section').css("height", "200px")
+   $('#who_culture_bg').css({ "width": "800px", "background-position": "173px 108px" })
+   $('#who_culture_section').css("height", "300px")
+   $('.culture-quote').css({ "position": "relative", "top": "-300px" })
+   $('.culture-quote > p:nth-child(1)').css({ "font-size": "10px", "width": "220px", "position": "relative", "top": "65px", "left": "-15px" })
+   $('#who_culture_join > h2').css({ "font-size": "40px", "position": "relative", "top": "-75px" })
+   $('#who_culture_join > p').css({ "top": "-120px" })
+   //CHANGING THE INNER TEXT FOR MOBILE VIEW
+
+   $('.who-culture-content > p:nth-child(2)').text("People want to come work for us because they’ve heard it’s actually different here. We take pride in our diverse array of hometowns, resumes, and education histories. We’re 106 people who speak 31 different languages.")
+   $('.who-culture-content > p:nth-child(2)').css("margin-bottom", "50px")
+   $('.who-culture-content > p:nth-child(3)').text("Our culture doesn’t only serve shareholders or tenants or the community. Our design actually serves all of them at the same time.")
+   $('.who-culture-content > p:nth-child(3)').css("margin-bottom", "30px")
+   $('.who-culture-content > p:nth-child(4)').text("You might ask, how could putting that much effort in be profitable? And the answer actually lies right within the question. Because we do put in that much effort, we actually get the desired results. Is it easy? No. Would we change it? Never.")
+
    $('.who-culture-content').css({ "position": "relative", "top": "-365px" })
    $('#who_story, #who_team').css({ "font-size": "40px", "width": "334px", "color": "#002f87", "top": "-80px" })
    $('#who_cornerstone').css({ "position": "relative", "top": "-110px" })
