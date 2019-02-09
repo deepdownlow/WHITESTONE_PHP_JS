@@ -170,12 +170,21 @@ $(document).ready(() => {
 
    //WHO WE ARE => CULTURE
    $('#who_culture_section').addClass("culture-description-mobile")
-   $('#who_culture_bg').css({ "width": "800px", "background-position": "173px 108px" })
+   $('#who_culture_bg').css({ "width": "800px", "background-position": "178px 108px" })
    $('#who_culture_section').css("height", "300px")
    $('.culture-quote').css({ "position": "relative", "top": "-300px" })
-   $('.culture-quote > p:nth-child(1)').css({ "font-size": "10px", "width": "220px", "position": "relative", "top": "65px", "left": "-15px" })
+   $('.culture-quote > p:nth-child(1)').css({ "font-size": "10px", "width": "220px", "position": "relative", "top": "65px", "left": "-7px" })
+   $('.culture-quote > p:nth-child(2)').css({ "font-size": "9px", "position": "relative", "top": "30px", "left": "-8px" })
    $('#who_culture_join > h2').css({ "font-size": "40px", "position": "relative", "top": "-75px" })
    $('#who_culture_join > p').css({ "top": "-120px" })
+   $('#culture_quote_box').addClass("culture-quote-mobile")
+   $('#who_culture_text_box').css({ "margin-top": "-30px" })
+   $('#who_culture_text_box > div > img').css({ "position": "relative", "left": "-59px" })
+   $('#who_culture_text_box > div > h6').css({ "position": "relative", "left": "-54px" })
+   $('div.who_culture_benefits > p').css({ "font-size": "12px", "text-align": "left", "margin-left": "9px", "margin-top": "-25px", "margin-bottom": "20px", "width": "350px" })
+   $('.who_culture_work').css({ "bottom": "0", "left": "0", "height": "300px", "background-size": "cover", "margin-top": "-141px" })
+   $('.who_culture_work > a').css({ "top": "60%", "left": "50%", "transform": "translate(-50%,-50%)" })
+   $('.who_culture_work > p').css({ "position": "relative", "top": "104px", "letter-spacing": "2px", "font-size": "15px !important" })
    //CHANGING THE INNER TEXT FOR MOBILE VIEW
 
    $('.who-culture-content > p:nth-child(2)').text("People want to come work for us because they’ve heard it’s actually different here. We take pride in our diverse array of hometowns, resumes, and education histories. We’re 106 people who speak 31 different languages.")
@@ -189,9 +198,11 @@ $(document).ready(() => {
    $('#who_cornerstone').css({ "position": "relative", "top": "-110px" })
    $('.cornerstone-item > h6').css({ "font-size": "14px" })
    $('.who_culture_story > p').css({ "font-size": "10px", "margin-top": "-26px" })
-   $('.culture-gallery').css({ "top": "-420px" })
-   $('.culture_gallery > img').css({ "max-width": "95px", "height": "91.2px" })
-
+   $('.culture-gallery').css({ "top": "-420px", "left": "8px" })
+   $('.culture_gallery > img').css({ "max-width": "115px", "height": "91.2px" })
+   $('.culture-gallery > div:nth-child(2) > img').css("margin-left", "-8px")
+   $('.culture-gallery > div:nth-child(3) > img').css("margin-left", "-18px")
+   $('.culture-join-team').css({ "position": "relative", "background-color": "white" })
    ////WHO WE ARE => OUR TEAM
    $('#who_team').css({ "letter-spacing": "0", "width": "337px" })
    $('.ctu-ultimate-wrapper-1').css({ "margin-top": "-100px" })
@@ -221,8 +232,6 @@ $(document).ready(() => {
    $('.footer-social_two').css({ "display": "none" })
   }
  };
-
-
 
  responsive();
 
