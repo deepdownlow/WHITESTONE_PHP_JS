@@ -125,13 +125,16 @@ $(document).ready(() => {
    $('#menu_light').addClass("without-sub-menu-light")
    $('#header_two').css({ "font-size": "40px", "position": "relative", "top": "-61px", "letter-spacing": "1.13" })
    $('#now-hiring-p p').css({ "font-size": "12px", "line-height": "1.5", "position": "relative", "top": "-150px", "margin-bottom": "30px", "width": "360px", "letter-spacing": ".2px" })
-   $('#job_title h6').css({ "font-size": "14px", "letter-spacing": "1.7" })
-   $('#job_titles').css({ "position": "relative", "top": "-130px" })
+
+   $('#job_titles').css({ "position": "relative", "top": "-120px" })
+   $('#job_title > h6').css({ "font-size": "12px", "letter-spacing": "1.7", "width": "177px" })
+   $('#job_title > h6').addClass("career-item-mobile")
    $('.career-item').css({ "margin-top": "0" })
    $('#who_career_content').css({ "position": "relative", "top": "-340px" })
    $('#who_career_text_box').css({ "position": "relative", "top": "-340px" })
-   $('#career_loc img').css({ "position": "absolute", "top": "40px", "width": "11.2px", "height": "16px" })
-   $('#career_loc p').css({ "position": "absolute", "top": "40px", "left": "30px" })
+   $('.who_career_loc').css("margin-top", "30px")
+   $('.who_career_loc > img').css({ "position": "absolute", "top": "30px", "width": "11.2px", "height": "16px" })
+   $('.who_career_loc > p').css({ "position": "absolute", "top": "32px", "left": "30px", "font-size": "11px" })
    $('#career_img img').css({ "width": "121.4px", "height": "91.2px", "position": "relative", "top": "-156px" })
    $('h3.text-blue').css({ "font-size": "32px", "line-height": "1.13", "letter-spacing": "1.6px", "color": "#002f87", "margin-left": "10px" })
    $('#career_content p').css({ "font-size": "12px", "line-height": "1.67", "letter-spacing": ".2px", "color": "#494b50", "width": "355px", "height": "75px", "margin-bottom": "40px", "margin-left": "10px" })
@@ -183,8 +186,10 @@ $(document).ready(() => {
    $('#who_culture_text_box > div > h6').css({ "position": "relative", "left": "-54px" })
    $('div.who_culture_benefits > p').css({ "font-size": "12px", "text-align": "left", "margin-left": "9px", "margin-top": "-25px", "margin-bottom": "20px", "width": "350px" })
    $('.who_culture_work').css({ "bottom": "0", "left": "0", "height": "300px", "background-size": "cover", "margin-top": "-141px" })
+   $('#who_our_team > a').css({ "top": "60%", "left": "50%", "transform": "translate(-50%,-50%)" })
+   $('#who_our_team > p').css({ "position": "relative", "top": "20px", "letter-spacing": "2px" })
    $('.who_culture_work > a').css({ "top": "60%", "left": "50%", "transform": "translate(-50%,-50%)" })
-   $('.who_culture_work > p').css({ "position": "relative", "top": "104px", "letter-spacing": "2px", "font-size": "15px !important" })
+   $('.who_culture_work > p').css({ "position": "relative", "top": "104px", "letter-spacing": "2px" })
    //CHANGING THE INNER TEXT FOR MOBILE VIEW
 
    $('.who-culture-content > p:nth-child(2)').text("People want to come work for us because they’ve heard it’s actually different here. We take pride in our diverse array of hometowns, resumes, and education histories. We’re 106 people who speak 31 different languages.")
@@ -206,8 +211,8 @@ $(document).ready(() => {
    ////WHO WE ARE => OUR TEAM
    $('#who_team').css({ "letter-spacing": "0", "width": "337px" })
    $('.ctu-ultimate-wrapper-1').css({ "margin-top": "-100px" })
-   $('.ctu-ulitate-style-1-tabs > p:nth-child(1)').css({ "color": "-10" })
-
+   $('.ctu-ulitate-style-1-tabs > p:nth-child(4)').css({ "font-size": "12px" })
+   $('#who_our_team').css({ "margin-top": "-48px", "height": "250px" })
    //ACQ
    $('.acq_p > p').css({ "font-size": "12px" })
    $('#acq_intro').css('padding-bottom', '0')
@@ -232,6 +237,8 @@ $(document).ready(() => {
    $('.footer-social_two').css({ "display": "none" })
   }
  };
+
+
 
  responsive();
 
